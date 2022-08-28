@@ -4,6 +4,7 @@
 	<title>Form Page</title>
 	<link rel="stylesheet" href="C:\Users\Fasil\OneDrive\Desktop\ignit\style_form.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+	<script src="form_script.js"></script>
 </head>
 <body>
 	
@@ -11,7 +12,7 @@
 			<h2><b>REGISTRATION FORM</b></h2>
 		</div>
 		<div class="form-center">
-			<form>
+			<form name="regform" onsubmit="return validateForm()">
 				
 				<label for="fname"><b>First Name:</b></label><br>
 				<div class="icon-container">
@@ -34,7 +35,7 @@
 				<label for="password"><b>Password:</b></label><br>
 				<div class="icon-container">
 					<i class="fa fa-lock icon"></i>
-					<input type="password" id="pwd" name="pwd" placeholder="password"><br>
+					<input type="password" id="pwd" name="pwd" placeholder="password" required><br>
 				</div>
 				
 				 <label for="country"><b>Country:</b></label><br> 
