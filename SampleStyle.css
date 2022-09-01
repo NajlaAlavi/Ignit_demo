@@ -1,0 +1,55 @@
+.btn1{
+     padding: 10px 15px;
+     background-color: blue; 
+     font-size: 20px;
+     color: white;
+     border: none;
+     border-radius: 8px;  
+}
+.btn1:hover{
+    background-color: blueviolet;
+    transition: opacity 0.3s;
+}
+
+.btn2{
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+.btn2:hover{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button{
+    display: block;
+}
+
+.btn3, .btn4, .btn5{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    
+}
+.btn3:hover{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn5:hover{
+    opacity: 0.6;
+    transition-duration: 0.4s;
+}
+
+ span{
+    color: orangered;
+ }
+
