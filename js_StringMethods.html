@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<!-- <script> -->
+		<!-- let a= "hello"; -->
+		<!-- console.log(a.length) -->
+	<!-- </script> -->
+	<h2>JAVASCRIPT STRING PROPERTIES</h2>
+	<p id ="string"></p>
+	<p id = "slice"></p>
+	<script>
+		let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		document.getElementById("string").innerHTML = text.length;
+		document.getElementById("slice").innerHTML = text.slice(7,13);
+	</script>
+	<script>
+		let str="Apple, Banana, Kiwi";
+		console.log(str.slice(7,13));
+	</script>
+	<script>
+		let txt = "Please visit Microsoft";
+		console.log(txt.replace("Microsoft","W3Schools"));
+	</script>
+	
+	<p id="dm">Please visit Microsoft</p>
+	<button onclick="stringReplace()" >Click Here</button>
+	<script>
+		function  stringReplace(){
+			let txt1 = document.getElementById("dm").innerHTML;
+			document.getElementById("dm").innerHTML = txt1.replace("Microsoft","W3Schools");
+		}
+	</script>
+	
+	<script>
+		let up = "hello world";
+		console.log(up.toUpperCase());
+	</script>
+	
+	<p id="uper">hai everyone</p>
+	<button onclick="upper()">CLICK HERE</button>
+	<script>
+		function upper(){
+			let txt2 = document.getElementById("uper").innerHTML;
+			document.getElementById("uper").innerHTML = txt2.toUpperCase();
+		}
+	</script>
+	
+	<script>
+		let con = "hello";
+		let con1 = "haii";
+		console.log(con.concat(" ", con1));
+	</script>
+	
+	<script>
+		let t1="  Hello World!!     ";
+		let t2 = t1.trim();
+		console.log(t2);
+		let char = t1.charAt(4);
+		console.log(char);
+	</script>
+</body>
+</html>

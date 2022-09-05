@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <style>
+            .heading{
+                color: royalblue;
+            }
+        </style>
+        <script src="javascript3.js"></script>
+    </head>
+    <body>
+        <h1>HELLO WORLD</h1>
+        <h2 id="hi">hello</h2>
+        <h2 class="heading">Hai</h2>
+        <h2 class="heading">good</h2>
+        <h2 class="cls">ignit</h2>
+
+        <p id="demo"></p>
+        <p id="dem"></p>
+        <script>
+            document.getElementById('hi').innerHTML="Good Morning";
+           let abc = document.getElementById('hi').style;
+           abc.color="red";
+           abc.backgroundColor="blue";
+
+           var x = 5;
+           var y = 6;
+           var z = x + y;
+           document.getElementById('demo').innerHTML = "The value of z is:" +z;
+           let b = document.getElementById('demo').style;
+           b.fontFamily="courier";
+           b.fontSize="20px";
+           b.color="green";
+           
+           const cars = ["BMW", "Hyundai", "Toyota", "Volvo"];
+           cars[1] = "EcoSport";
+           cars.push("Audi");
+           document.getElementById('dem').innerHTML = cars;
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT</title>
+	<script>
+		function myfun(){
+			document.getElementById("demo5").innerHTML="Paragraph is changed";
+		}
+	</script>
+</head>
+<body>
+	<h1>MY FIRST JAVASCRIPT</h1>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">CLICK TO DISPLAY DATE & TIME</button>
+	<p id="demo"></p>
+	
+	<h2 id="dem">CHANGE THE HTML CONTENT</h2> 
+	<button type="button" onclick='document.getElementById("dem").innerHTML = "Hello Javascript"'>CLICK HERE</button><br><br>
+	
+	 <button onclick="document.getElementById('myPic').src='bulbon.gif'">Turn on Light</button> 
+	 <img id="myPic" src="bulboff.gif" style="width: 100px">  
+	 <button onclick="document.getElementById('myPic').src='bulboff.gif'">Turn off Light</button> <br><br>
+	
+	<img id="myimg" src="ignit_img.jpg" >  
+	 <script>   
+		document.getElementById("myimg").src="Login.jpg"; 
+	</script> <br><br><br> 
+	
+	<img id="imgchng" src="ig_logo.png">
+	<button onclick="document.getElementById('imgchng').src='IMG4.png'">IMAGE CHANGE</button><br><br><br>
+	
+	<script>
+		document.write("Hello World")
+	</script>
+	
+	<h1 id="hello">HELLO WORLD</h1>
+	<script>
+		document.getElementById("hello").innerHTML="WELCOME";
+	</script>
+	
+	<p id ="change">By clicking the button, you can change html style</p>
+	<button onclick="document.getElementById('change').style.fontSize='40px'">CLICK</button>
+	
+	<h2 class="hai">HAI</h2>
+	<script>
+		document.getElementsByClassName("hai").innerHTML="How";
+	</script>
+	
+	<p id="hide">Javascript can hide and show HTML elements.</p>
+	<button onclick='document.getElementById("hide").style.display="none"'>BUTTON TO HIDE</button>
+	<button onclick="document.getElementById('hide').style.display='block'">BUTTON TO VIEW</button>
+	
+	<p id="abc">Hello</p>
+	<script>
+		var a = document.getElementById("abc");
+		a.style.fontsize="100px";
+		a.style.color="red";
+		a.innerHTML="good";
+		
+		var a = 10;
+		var b = 20;
+		c=a+b;
+		console.log(c);
+	</script>
+	
+	
+	<h2>Demo Function Javascript</h2>
+	<p id="demo5">A paragraph to change</p>
+	<button onclick="myfun()">Try It</button>
+	
+	
+	<h1 id="demo6">Changing the contents using Function</h1>
+	<button onclick="myfun1()">TRY THIS</button>
+	
+	<script>
+		function myfun1(){
+			document.getElementById("demo6").innerHTML="The heading is changed";
+		}
+	</script>
+	
+	<p id="js">Changing through external Javascript file.</p>
+	<button onclick="myfun2()">CLICK ME</button>
+	<script src="script1.js"></script>
+	
+	<!-- <script> -->
+		<!-- window.alert("CLOSE THE WEB PAGE"); -->
+	<!-- </script> -->
+	
+	<h4>The window.print() method</h4>
+	<p>Click the button to print this page.</p>
+	<button onclick="window.print()">Print this page</button>
+	
+	<h4> JAVASCRIPT STATEMENTS</h4>
+	<p>A javascript program is a list of statements.</p>
+	<p id="demo8"></p>
+	<script>
+		let x,y,z;
+		x=5;
+		y=6;
+		z=x+y;
+		
+		document.getElementById("demo8").innerHTML =
+		"The value of z is" + z + ".";
+	</script>
+	
+	
+</body>
+</html>
